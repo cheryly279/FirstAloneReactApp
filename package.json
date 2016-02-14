@@ -11,5 +11,9 @@
   "dependencies": {
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.13.2",
+    "webpack": "^1.12.13"
   }
 }
