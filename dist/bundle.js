@@ -44,15 +44,13 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/** @jsx React.DOM */var React = __webpack_require__(1);
+	'use strict';
+
+	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
 	var Hello = __webpack_require__(159);
 
-	React.render(
-	   React.createElement(Hello, null),
-	   document.body
-	);
-
+	React.render(React.createElement(Hello, null), document.body);
 
 /***/ },
 /* 1 */
@@ -19659,17 +19657,24 @@
 /* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/** @jsx React.DOM */var React = __webpack_require__(1);
+	'use strict';
+
+	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
 
-	var Hello = React.createClass({displayName: "Hello",
-	   render: function() {
-	      return React.createElement("p", null, "Hello, world!");
+	var Hello = React.createClass({
+	   displayName: 'Hello',
+
+	   render: function render() {
+	      return React.createElement(
+	         'p',
+	         null,
+	         'Hello, world4!'
+	      );
 	   }
 	});
 
 	module.exports = Hello;
-
 
 /***/ }
 /******/ ]);

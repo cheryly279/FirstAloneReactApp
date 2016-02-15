@@ -9,11 +9,14 @@ var config = {
     module: {
         loaders: [
             {
-                //tell webpack to use jsx-loader for all *.jsx files
-                test: /\.jsx$/,
-                loader: 'jsx-loader?insertPragma=React.DOM&harmony'
+                test: /.jsx?$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+                query: {
+                    presets: ['es2015', 'react']
+                }
             }
-        ]
+        ],
     },
     resolve: {
         extensions: ['', '.js', '.jsx']
