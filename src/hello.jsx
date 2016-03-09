@@ -1,10 +1,10 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+const React = require('react');
+const ReactDOM = require('react-dom');
 
-var Hello = React.createClass({
-   render: function() {
-      return <p>Hello, world!</p>;
-   }
-});
+class Hello extends React.Component {
+  render() {
+    return <div>Hello World!</div>;
+  }
+}
 
 module.exports = Hello;

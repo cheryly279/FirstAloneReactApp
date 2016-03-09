@@ -1,8 +1,5 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var Hello = require('./hello.jsx');
+const React = require('react');
+const ReactDOM = require('react-dom');
+const Hello = require('./hello.jsx');
 
-React.render(
-   <Hello />,
-   document.body
-);
+ReactDOM.render(<Hello />, document.getElementById('react-mount-point'));
