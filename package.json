@@ -4,6 +4,7 @@
   "description": "Making a React app on my own (sans a specific tutorial).",
   "main": "index.js",
   "scripts": {
+    "start": "http-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf ./node_modules && npm cache clean",
     "cleaninstall": "npm run clean && npm install"

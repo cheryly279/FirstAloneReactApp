@@ -19,5 +19,5 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', function (cb) {
-    runSequence('watch', cb);
+    runSequence('webpack', 'watch', cb);
 });
