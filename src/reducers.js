@@ -41,8 +41,10 @@ function entities(state = initialState.entities, action) {
 }
 
 // TODO: Refactor to use combineReducers
-function wishlistApp(state = initialState, action) {
+function wishListApp(state = initialState, action) {
     return {
         entities: entities(state.entities, action)
     };
 }
+
+export default wishListApp
