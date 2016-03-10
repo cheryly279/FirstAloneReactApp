@@ -1,5 +1,4 @@
 const React = require('react');
-const ReactDOM = require('react-dom');
 
 class Hello extends React.Component {
   render() {
