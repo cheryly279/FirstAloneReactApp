@@ -1,11 +1,11 @@
 import React from 'react'
 import AddWishListItem from '../containers/AddWishListItem'
-import VisibleWishList from '../containers/VisibleWishList'
+import WishListContainer from '../containers/WishListContainer'
 
 const App = () => (
     <div>
         <AddWishListItem />
-        <VisibleWishList />
+        <WishListContainer />
     </div>
 );
 

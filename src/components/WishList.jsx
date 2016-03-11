@@ -1,13 +1,13 @@
 import React, { PropTypes } from 'react'
 import WishListItem from './WishListItem'
 
-const WishList = ({ items, onTodoClick }) => (
+const WishList = ({ items, onItemClick }) => (
     <ul>
-        {items.map(item =>
+        {items.map((item, index) =>
             <WishListItem
-                key={item.id}
+                key={index}
                 {...item}
-                onClick={() => onItemClick(item.id)}
+                onClick={() => onItemClick(index)}
             />
         )}
     </ul>
@@ -15,7 +15,6 @@ const WishList = ({ items, onTodoClick }) => (
 
 WishList.propTypes = {
     items: PropTypes.arrayOf(PropTypes.shape({
-        id: PropTypes.number.isRequired,
         purchased: PropTypes.bool.isRequired,
         title: PropTypes.string.isRequired
     }).isRequired).isRequired,

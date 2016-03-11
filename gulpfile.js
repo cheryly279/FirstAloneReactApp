@@ -15,7 +15,7 @@ gulp.task('webpack', function(callback) {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('./src/*', ['webpack']);
+    gulp.watch('./src/**', ['webpack']);
 });
 
 gulp.task('default', function (cb) {

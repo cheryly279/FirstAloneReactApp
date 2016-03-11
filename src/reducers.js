@@ -9,9 +9,9 @@ const initialState = {
 function items(state = initialState.entities.items, action) {
     switch (action.type) {
         case ADD_ITEM:
-            return [...state.entities.items, action.item];
+            return [...state, action.item];
         case TOGGLE_ITEM_PURCHASED:
-            return state.entities.items.map((item, index) => {
+            return state.map((item, index) => {
                 if (index === action.index) {
                     return Object.assign({}, item, {
                         purchased: !item.purchased
@@ -20,10 +20,10 @@ function items(state = initialState.entities.items, action) {
                 return item;
             });
         case REMOVE_ITEM:
-            return [...state.entities.items.slice(0, action.index),
-                    ...state.entities.items.slice(action.index + 1)];
+            return [...state.slice(0, action.index),
+                    ...state.slice(action.index + 1)];
         case UPDATE_ITEM:
-            return state.entities.items.map((item, index) => {
+            return state.map((item, index) => {
                 if (index === action.index) {
                     return Object.assign({}, item, action.item);
                 }

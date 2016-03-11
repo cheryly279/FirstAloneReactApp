@@ -1,10 +1,10 @@
 var config = {
     context: __dirname + "/src",
-    entry: "./main.jsx",
+    entry: "./index.jsx",
 
     output: {
         filename: "bundle.js",
-        path: __dirname + "/dist",
+        path: __dirname + "/dist"
     },
     module: {
         loaders: [
@@ -16,7 +16,7 @@ var config = {
                     presets: ['es2015', 'react']
                 }
             }
-        ],
+        ]
     },
     resolve: {
         extensions: ['', '.js', '.jsx']
