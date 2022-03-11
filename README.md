@@ -1,5 +1,5 @@
 # React Learning App
-Application for testing out various features of React.
+Application for testing out various features of React. testtesttest
 
 ## Run
 1. Open two tabs in the command-line, go to the root directory of this app for both.
